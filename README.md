@@ -3,88 +3,177 @@ This is my New Portfolio under construction.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio showcasing software solutions and development services.">
-    <title>Your Portfolio - Software Solutions</title>
-    <link rel="stylesheet" href="styles.css"> <!-- External CSS file link -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AlphaTech Solutions - Innovating the Future, One Solution at a Time.">
+  <meta name="keywords" content="IT Solutions, Web Development, Software, Consultancy">
+  <meta name="author" content="Moses Mwombe">
+  <title>AlphaTech Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #87cefa;
+    }
+    .bg-overlay {
+      background-color: rgba(255, 255, 255, 0.9);
+      min-height: 100vh;
+    }
+    nav {
+      background-color: #00b5e2;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+      top: 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #f0f0f0;
+    }
+    .hero {
+      background-color: rgba(0, 181, 226, 0.8);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: white;
+      font-weight: 700;
+    }
+    .hero p {
+      color: white;
+      font-size: 1.25rem;
+    }
+    .hero button {
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      background-color: white;
+      color: #00b5e2;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hero button:hover {
+      background-color: #f0f0f0;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .services, .testimonials, .contact {
+      background-color: #f0f8ff;
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #0097a7;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      margin: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .footer {
+      text-align: center;
+      background-color: #0097a7;
+      padding: 20px;
+      color: white;
+    }
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #0097a7;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+    }
+    .scroll-top:hover {
+      background: #007a94;
+    }
+  </style>
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header>
-        <h1>Your Portfolio</h1>
-        <p>Providing Innovative Software Solutions</p>
-    </header>
-
-    <!-- Navigation Bar -->
+  <div class="bg-overlay">
+    <!-- Navigation -->
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+      <a href="#about-us">About Us</a>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Explore my software solutions and services. I specialize in creating powerful, efficient, and scalable software solutions tailored to your business needs.</p>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I am a passionate software developer with over X years of experience in delivering top-notch software solutions. My expertise spans web development, application development, and system integration.</p>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <h1>AlphaTech Solutions</h1>
+      <p>Innovating the Future, One Solution at a Time</p>
+      <button onclick="window.location.href='mailto:info@alphatech.com'" aria-label="Get a Quote">Get a Quote</button>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Services</h2>
-        <div class="service-item">
-            <h3>Web Development</h3>
-            <p>Building responsive and scalable websites with modern technologies like HTML, CSS, JavaScript, and frameworks like React, Angular, and Vue.js.</p>
-        </div>
-        <div class="service-item">
-            <h3>Mobile App Development</h3>
-            <p>Creating native and cross-platform mobile applications with tools such as Flutter, React Native, and Kotlin.</p>
-        </div>
-        <div class="service-item">
-            <h3>Custom Software Solutions</h3>
-            <p>Developing tailored solutions to automate processes, enhance productivity, and improve business performance using the latest technologies.</p>
-        </div>
+    <section class="services section" id="services">
+      <h2>Our Services</h2>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="Web Development Service" loading="lazy">
+        <h3>Web Development</h3>
+        <p>Custom web development solutions tailored to your business needs.</p>
+      </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <h2>Portfolio</h2>
-        <p>Check out some of the recent projects I've worked on:</p>
-        <ul>
-            <li><strong>Project 1</strong>: A web app that helps businesses manage their inventory.</li>
-            <li><strong>Project 2</strong>: A mobile app that provides real-time tracking for deliveries.</li>
-            <li><strong>Project 3</strong>: A custom CRM system built for small businesses.</li>
-        </ul>
-    </section>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" onclick="scrollToTop()" aria-label="Scroll to Top">&#8679;</button>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>If you have any questions or would like to collaborate, feel free to get in touch.</p>
-        <form action="#" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" required></textarea><br><br>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Your Portfolio - All Rights Reserved</p>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 AlphaTech Solutions. Designed & Developed by Moses Mwombe.</p>
     </footer>
+  </div>
 
+  <script>
+    // Show/hide scroll-to-top button
+    window.onscroll = function() {
+      const scrollTopBtn = document.querySelector('.scroll-top');
+      if (document.documentElement.scrollTop > 200) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    };
+
+    // Smooth scroll to top
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>

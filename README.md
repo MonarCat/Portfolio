@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AlphaTech Solutions - Innovating the Future, One Solution at a Time.">
+  <meta name="keywords" content="IT Solutions, Web Development, Software, Consultancy">
+  <meta name="author" content="Moses Mwombe">
+  <title>AlphaTech Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #87cefa;
+    }
+    .bg-overlay {
+      background-color: rgba(255, 255, 255, 0.9);
+      min-height: 100vh;
+    }
+    nav {
+      background-color: #00b5e2;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+      top: 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #f0f0f0;
+    }
+    .hero {
+      background-color: rgba(0, 181, 226, 0.8);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: white;
+      font-weight: 700;
+    }
+    .hero p {
+      color: white;
+      font-size: 1.25rem;
+    }
+    .hero button {
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      background-color: white;
+      color: #00b5e2;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hero button:hover {
+      background-color: #f0f0f0;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .services, .testimonials, .contact {
+      background-color: #f0f8ff;
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #0097a7;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      margin: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .footer {
+      text-align: center;
+      background-color: #0097a7;
+      padding: 20px;
+      color: white;
+    }
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #0097a7;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+    }
+    .scroll-top:hover {
+      background: #007a94;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-overlay">
+    <!-- Navigation -->
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+      <a href="#about-us">About Us</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <h1>AlphaTech Solutions</h1>
+      <p>Innovating the Future, One Solution at a Time</p>
+      <button onclick="window.location.href='mailto:info@alphatech.com'" aria-label="Get a Quote">Get a Quote</button>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+      <h2>Our Services</h2>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="Web Development Service" loading="lazy">
+        <h3>Web Development</h3>
+        <p>Custom web development solutions tailored to your business needs.</p>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" onclick="scrollToTop()" aria-label="Scroll to Top">&#8679;</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 AlphaTech Solutions. 
+        Designed & Developed by Moses Mwombe.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Show/hide scroll-to-top button
+    window.onscroll = function() {
+      const scrollTopBtn = document.querySelector('.scroll-top');
+      if (document.documentElement.scrollTop > 200) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    };
+
+    // Smooth scroll to top
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
